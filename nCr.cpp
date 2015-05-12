@@ -23,14 +23,13 @@ long long nCr(long long n, long long r){
 
 
 long long pow(long long a, long long b){ 
-  long long r = 1LL;
-
+  long long r=1LL;
   while(b){
-    if(b & 1LL)r *= a;
-    if(r >= mod)r %= mod;
-    a *= a;
-    if(a >= mod)a %= mod;
-    b >>= 1LL;
+    if(b&1LL)r*=a;
+    if(r>=mod)r%=mod;
+    a*=a;
+    if(a>=mod)a%=mod;
+    b>>=1LL;
   }
   return r;
 }
