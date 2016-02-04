@@ -1,2 +1,1 @@
-# programing
-This repository is about algorithms.
+My competitive programing contest's library.
