@@ -4,7 +4,7 @@ using namespace std;
 
 void quicksort(int array[],int left,int right){
 	int moveleft=left,moveright=right;
-	int center=array[(left+right)/2]
+	int center=array[(left+right)/2];
 	while(1){
 		while(array[moveleft]<array[center])	moveleft++;
 		while(array[moveright]>array[center])	moveright++;
